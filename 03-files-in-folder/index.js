@@ -11,7 +11,7 @@ fs.readdir(pathToSecretDir, { withFileTypes: true }, (err, files) => {
         console.log(
           `${obj.name.split('.')[0]}-${obj.name.split('.')[1]}-${
             stats['size']
-          }`,
+          }bites`,
         );
       }
     });
