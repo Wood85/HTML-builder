@@ -107,7 +107,7 @@ function createCss() {
         if (err) return console.error(err.message);
         if (stats.isFile() && path.extname(obj.name) === '.css') {
           fs.readFile(
-            `${obj.path}\\${obj.name}`,
+            path.resolve(obj.path, obj.name),
             'utf8',
             (err, fileContent) => {
               if (err) return console.error(err.message);

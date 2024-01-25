@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const { stdin, stdout, exit } = process;
-const pathToRecords = path.join(__dirname, 'text.txt');
+const pathToRecords = path.resolve(__dirname, 'text.txt');
 let body = '';
 
 function init() {
